@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 
 WORKDIR /yada
-RUN pip install -r flask gunicorn
+RUN pip install flask gunicorn
 
 COPY app /yada/
 
