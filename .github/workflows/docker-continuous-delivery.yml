@@ -20,12 +20,9 @@ jobs:
     # this job will be played against each tuple of this matrix
     strategy:
       matrix:
-        include:
-          - image-name: frontend
-            build-context: frontend/
-          
-          - image-name: backend
-            build-context: backend/
+        include:          
+          - image-name: yada
+            build-context: .
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
