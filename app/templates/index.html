@@ -1,0 +1,17 @@
+{% extends '_layout/base.html' %}
+
+{% block content %}
+
+<h1>YADA</h1>
+
+{% if username %}
+  <h2>Welcome {{username}}</h2>
+{% else %}
+  <form method="POST" action="">
+    <h2>Tell me who you are</h2>
+    <input placeholder="Username" name="username" required />
+    <button type="submit">confirmer</button>
+  </form>
+{% endif %}
+
+{% endblock content %
